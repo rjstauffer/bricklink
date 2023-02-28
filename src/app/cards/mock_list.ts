@@ -11,7 +11,7 @@ export const mock_list = [
     },
     {
         img: "https://img.bricklink.com/ItemImage/MN/0/sc102.original.png",
-        price: 2.50,
+        price: 2.52,
         description: "James Bond",
     },
     {

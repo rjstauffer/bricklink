@@ -1,3 +1,10 @@
 .continer-fluid .navbar{
     display: flex;
  }
+ p {
+    font-size: 0.6875em;
+    font-weight: bold;
+  }
+  a:hover {
+    background-color: #719ec5;
+  }
