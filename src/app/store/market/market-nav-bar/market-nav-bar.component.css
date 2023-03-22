@@ -1,0 +1,21 @@
+.my-custom-class {
+    background-color: #506070;
+    height: 34px;
+  }
+
+  
+
+  .nav-item {
+    font-size: 0.7875em;
+    margin-left: 6px;
+   
+  }
+
+  .navbar a:hover {
+    color: white;
+  }
+
+  .navbar a {
+    color: #a1d2dc;
+  }
+  

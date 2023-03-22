@@ -1,0 +1,37 @@
+.position {
+    position: relative;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-item {
+    font-size: 0.85em;
+    margin-left: -12px;
+   
+  }
+
+  .staff-special {
+    color: #2b1111;
+  }
+
+  .nav a {
+    color: #746d66;
+  }
+
+.container-week {
+    background-color: #fff4df;
+    border-radius: 4px;
+    height: 30px;
+    margin-top: 7px;
+    text-align: center;
+    
+}
+
+.container-week a {
+    font-size: 0.80em;
+    color: #2b1111;
+    font-style: normal;
+    font-family: "LatoWeb","Helvetica Neue",Helvetica,Arial,serif;
+
+}
