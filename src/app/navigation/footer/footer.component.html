@@ -1,0 +1,17 @@
+<p *ngIf="myInfo == undefined">Failed fetching user info</p>
+<div *ngIf="myInfo != undefined">
+    <div class="container-fluid myBackground">
+        <div class="offset">
+            <div class="flex-column">
+                <a>Author: {{myInfo.FirstName}} {{myInfo.LastName}}</a> 
+            </div>
+            <div class="flex-column">
+                <a>Mix ID: {{myInfo.mix_id}}</a> 
+            </div>
+            <div class="flex-column">
+                <a>Github: {{myInfo.GitHub}}</a> 
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+.myBackground {
+    background-color: #506070;
+    height: 280px;
+    
+}
+
+.offset {
+    background-color: #506070;
+    margin-left: 160px;
+    padding-top: 5%;
+}
+
+.flex-column a {
+    color: #a1d2dc;
+}

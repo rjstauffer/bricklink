@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,8 @@ import { StudioNavBarComponent } from './store/studio/studio-nav-bar/studio-nav-
 import { JumbotronStudioComponent } from './store/studio/jumbotron-studio/jumbotron-studio.component';
 import { SearchStudioComponent } from './store/studio/search-studio/search-studio.component';
 import { CardsStudioComponent } from './store/studio/cards-studio/cards-studio.component';
+import { FooterComponent } from './navigation/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -42,11 +45,13 @@ import { CardsStudioComponent } from './store/studio/cards-studio/cards-studio.c
     StudioNavBarComponent,
     JumbotronStudioComponent,
     SearchStudioComponent,
-    CardsStudioComponent
+    CardsStudioComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
