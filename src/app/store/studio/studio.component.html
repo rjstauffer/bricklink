@@ -1,10 +1,11 @@
+
 <app-studio-nav-bar>loading...</app-studio-nav-bar>
 <app-jumbotron-studio>loading...</app-jumbotron-studio>
 <app-search-studio>loading...</app-search-studio>
 
-<div class="row row-cols-1 row-cols-md-3 text-center">
-    <form *ngFor="let items of product">
+<div class="container position" style="position: relative;">
+    <div *ngFor="let items of product">
         <app-cards-studio img={{items.img}} description={{items.description}} [creation]='items.creation'
             moc={{items.moc}} username={{items.username}}></app-cards-studio>
-    </form>
+    </div>
 </div>

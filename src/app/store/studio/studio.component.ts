@@ -12,7 +12,7 @@ export class StudioComponent {
   product: ProductsModel [] = [];
 
   constructor() {
-    
+
 
   for (var items of mock_list2) {
     console.log(items)

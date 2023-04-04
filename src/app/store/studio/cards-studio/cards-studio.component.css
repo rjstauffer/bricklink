@@ -1,8 +1,16 @@
+.position {
+    position: relative;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+
 .moc-card {
-    width: 400px;
+    width: 334px;
     padding: -6px;
-    position: absolute;
     margin-top: 10px;
+    margin-bottom: 10px;
 
 
 }
@@ -44,3 +52,4 @@
     position: relative;
     
 }
+
