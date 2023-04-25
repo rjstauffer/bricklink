@@ -9,6 +9,7 @@ import { MyStoreComponent } from './store/my-store/my-store.component';
 import { ProgramsComponent } from './store/programs/programs.component';
 import { StudioComponent } from './store/studio/studio.component';
 import { WantComponent } from './store/want/want.component';
+import { AddProductComponent } from './store/add-product/add-product.component';
 
 const routes: Routes = [
   {path: 'market', component: MarketComponent},
@@ -18,8 +19,9 @@ const routes: Routes = [
   {path: 'community', component: CommunityComponent},
   {path: 'myStore', component: MyStoreComponent},
   {path: 'myBL', component: MyBLComponent},
-  {path: 'want', component: WantComponent},
-  {path: 'cart', component: CartComponent}
+  {path: 'want', component: WantComponent}, 
+  {path: 'cart', component: CartComponent},
+  {path: 'admin', component: AddProductComponent}
 ];
 
 @NgModule({

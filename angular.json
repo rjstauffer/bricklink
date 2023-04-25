@@ -99,6 +99,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "bricklink:build:production",
+            "firebaseProject": "bricklink-app",
+            "firebaseHostingSite": "bricklink-app"
+          }
         }
       }
     }

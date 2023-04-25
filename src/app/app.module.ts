@@ -1,6 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+//import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database'
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
+import { AngularFireModule } from '@angular/fire/compat'; 
+import { environment } from 'src/environments/environment';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +30,8 @@ import { JumbotronStudioComponent } from './store/studio/jumbotron-studio/jumbot
 import { SearchStudioComponent } from './store/studio/search-studio/search-studio.component';
 import { CardsStudioComponent } from './store/studio/cards-studio/cards-studio.component';
 import { FooterComponent } from './navigation/footer/footer.component';
+import { AddProductComponent } from './store/add-product/add-product.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -46,12 +55,17 @@ import { FooterComponent } from './navigation/footer/footer.component';
     JumbotronStudioComponent,
     SearchStudioComponent,
     CardsStudioComponent,
-    FooterComponent
+    FooterComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)), provideDatabase(() => getDatabase()),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

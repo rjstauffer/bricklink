@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "bricklink-app"
+  },
+  "targets": {
+    "bricklink-app": {
+      "hosting": {
+        "bricklink": [
+          "bricklink-app"
+        ]
+      }
+    }
   }
 }
