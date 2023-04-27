@@ -10,6 +10,7 @@ import { ProgramsComponent } from './store/programs/programs.component';
 import { StudioComponent } from './store/studio/studio.component';
 import { WantComponent } from './store/want/want.component';
 import { AddProductComponent } from './store/add-product/add-product.component';
+import { AuthComponentComponent } from './auth/auth-component/auth-component.component';
 
 const routes: Routes = [
   {path: 'market', component: MarketComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path: 'myBL', component: MyBLComponent},
   {path: 'want', component: WantComponent}, 
   {path: 'cart', component: CartComponent},
-  {path: 'admin', component: AddProductComponent}
+  {path: 'admin', component: AddProductComponent},
+  {path: 'auth', component: AuthComponentComponent}
 ];
 
 @NgModule({

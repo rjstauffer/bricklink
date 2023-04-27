@@ -32,6 +32,7 @@ import { CardsStudioComponent } from './store/studio/cards-studio/cards-studio.c
 import { FooterComponent } from './navigation/footer/footer.component';
 import { AddProductComponent } from './store/add-product/add-product.component';
 import { FormsModule } from '@angular/forms';
+import { AuthComponentComponent } from './auth/auth-component/auth-component.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { FormsModule } from '@angular/forms';
     SearchStudioComponent,
     CardsStudioComponent,
     FooterComponent,
-    AddProductComponent
+    AddProductComponent,
+    AuthComponentComponent
   ],
   imports: [
     BrowserModule,
